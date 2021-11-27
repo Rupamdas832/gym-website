@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+:root{
+    --Yellow : yellow;
+    --Gray: rgb(49, 49, 49);
+    --Black: black;
+    --GrayishBlack: rgb(14, 14, 14);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--Gray);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.anchor-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--GrayishBlack);
+    padding: 0.5rem 1rem;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
+.nav-btn-div{
+    margin-right: 2rem;
+}
+.nav-btn{
+    background: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.nav-btn:hover{
+    color: var(--Yellow);
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-img{
+    height: 750px;
+}
+.header-text-box{
+    position: absolute;
+    left: 5rem;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.header-text-box h1{
+    font-size: 4rem;
+    font-weight: 800;
+}
+.header-text-box span{
+color: var(--Yellow);
+}
+.header-btn{
+    background: none;
+    border: none;
+    background-color: var(--Yellow);
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    border-radius: 3px;
+}
+.gym-logo{
+    width: 50px;
+    height: 50px;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0 2rem 0;
+}
+.services-sub-heading{
+    color: var(--Yellow);
+}
+.services{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 16rem;
+}
+.service-img-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--Black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.service-img-circle img{
+    width: 50%;
+    height: 50%;
+}
+.service h3{
+    margin: 1rem 0;
+}
+.service p{
+    color: var(--Black);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.section.image{
+    background-color: var(--Black);
+}
+.swiper {
+    width: 550px;
+    height: 400px;
+    margin-top: 2rem;
+  }
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    background-color: var(--GrayishBlack);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    position: relative;
+}
+.section-heading{
+    margin: 1rem 0;
+}
+.footer-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.footer-logo-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+.social-link-item{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+.social-link-item img{
+    height: 25px;
+    width: 25px;
+    margin-right: 1rem;
+}
+.developer{
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+.developer span{
+    color: var(--Yellow);
+}
+
+@media only screen and (max-width: 400px){
+    .nav-btn{
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
+    header{
+        background-color: var(--Black);
+        height: 350px;
+    }
+    .header-img{
+        display: none;
+    }
+    .header-text-box{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        margin-top: 4rem;
+    }
+    .header-text-box h1{
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .header-btn{
+        padding: 0.5rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .swiper {
+        width: 350px;
+        height: 300px;
+        margin-top: 2rem;
+      }
+    .services{
+        width: 100%;
+    }
+    .developer{
+        font-size: 0.6rem;
+    }
+}

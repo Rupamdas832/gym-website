@@ -1,3 +1,5 @@
+const changingText = document.querySelector("#changing-text")
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -26,3 +28,19 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+  const textArray = ["STRONG","HEALTY","GREAT"]
+  let index = 0;
+
+  setInterval(() => {
+    if(index > textArray.length - 1){
+      index = 0;
+    }
+    index = index +1;
+    changingText.innerText = textArray[index -1]
+  },2000)
+
+  
+
+  
+

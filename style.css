@@ -238,6 +238,22 @@ footer{
 }
 .developer span{
     color: var(--Yellow);
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px){
+    .header-img{
+        width: 90vw;
+        height: 600px;
+    }
+    .service{
+        width: 9rem;
+    }
+    .swiper {
+        width: 90vw;
+        height: 350px;
+        margin-top: 2rem;
+      }
 }
 
 @media only screen and (max-width: 400px){
@@ -264,6 +280,9 @@ footer{
         font-size: 2rem;
         font-weight: 800;
     }
+    .header-text-box p{
+        font-size: 0.8rem;
+    }
     .header-btn{
         padding: 0.5rem;
         font-size: 1rem;
@@ -276,6 +295,9 @@ footer{
       }
     .services{
         width: 100%;
+    }
+    .service{
+        width: 16rem;
     }
     .offer.left{
         display: flex;
